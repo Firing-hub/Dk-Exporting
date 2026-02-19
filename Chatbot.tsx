@@ -45,7 +45,6 @@ const Chatbot: React.FC = () => {
         },
       });
 
-      // Simple implementation of history for context
       const responseStream = await chat.sendMessageStream({ message: userMessage });
       
       let aiContent = "";
@@ -76,7 +75,7 @@ const Chatbot: React.FC = () => {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="absolute bottom-20 right-0 w-[380px] h-[550px] bg-[#161617] border border-white/10 shadow-2xl flex flex-col overflow-hidden"
+            className="absolute bottom-20 right-0 w-[300px] h-[450px] md:w-[380px] md:h-[550px] bg-[#161617] border border-white/10 shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
             <div className="p-5 bg-black border-b border-white/5 flex justify-between items-center">
@@ -121,7 +120,7 @@ const Chatbot: React.FC = () => {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                  placeholder="Ask about compliance, commodities, or logistics..."
+                  placeholder="Ask a question..."
                   className="flex-grow bg-[#161617] border border-white/10 p-3 text-xs text-white placeholder:text-gray-600 focus:border-gold/50 outline-none transition-all"
                 />
                 <button 

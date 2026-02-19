@@ -19,7 +19,7 @@ const ShippingVessel: React.FC = () => {
         opacity: { duration: 60, repeat: Infinity, times: [0, 0.1, 0.9, 1] },
         y: { duration: 6, repeat: Infinity, ease: "easeInOut" }
       }}
-      className="absolute bottom-[15%] left-0 w-[300px] pointer-events-none z-0"
+      className="absolute bottom-[15%] left-0 w-[300px] pointer-events-none z-10"
     >
       <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="stroke-gold/40">
         <path d="M10 25 L110 25 L105 35 L15 35 Z" strokeWidth="0.5" />
@@ -101,9 +101,20 @@ export default function Home() {
   return (
     <div className="bg-black">
       <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+        {/* Cinematic Ship Background */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=2000" 
+            alt="Cargo Ship background"
+            className="w-full h-full object-cover opacity-20 grayscale brightness-[0.2]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black/40"></div>
+        </div>
+
         <ShippingVessel />
         
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -118,7 +129,7 @@ export default function Home() {
               Agricultural Assets. <br />
               <span className="text-gold-gradient italic serif font-medium">Redefined.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light max-w-xl mb-12 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-300 font-light max-w-xl mb-12 leading-relaxed">
               Based in the strategic heart of India, DK Exporting bridges domestic heritage with global B2B standards through absolute integrity.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 items-center">

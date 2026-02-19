@@ -117,3 +117,8 @@ export const PROCESS: ProcessStep[] = [
     icon: '🚢'
   }
 ];
+
+export const NEWS_ITEMS = [];
+
+// Cleared sample jobs as per request
+export const JOB_OPENINGS = [];
