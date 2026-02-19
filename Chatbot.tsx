@@ -62,7 +62,7 @@ const Chatbot: React.FC = () => {
       }
     } catch (error) {
       console.error('Chat Error:', error);
-      setMessages(prev => [...prev, { role: 'ai', content: 'I apologize, but I am experiencing a temporary technical interruption. Please try again or contact our trade desk directly at trade@dkexporting.com.' }]);
+      setMessages(prev => [...prev, { role: 'ai', content: 'I apologize, but I am experiencing a temporary technical interruption. Please try again or contact our trade desk directly at dkexporting@gmail.com.' }]);
     } finally {
       setIsLoading(false);
     }

@@ -45,8 +45,9 @@ const Contact: React.FC = () => {
                 <h3 className="text-[10px] font-black text-gold mb-6 uppercase tracking-[0.5em]">Corporate HQ</h3>
                 <address className="not-italic text-white font-light text-lg leading-relaxed">
                   DK Exporting Private Ltd.<br />
-                  Strategic Trade Hub, Indore<br />
-                  Madhya Pradesh, India
+                  12, Road Bilawali, Ganesh Nagar<br />
+                  Near Khandwa Naka, Indore<br />
+                  Madhya Pradesh, India - 452001
                 </address>
               </div>
               
@@ -55,7 +56,7 @@ const Contact: React.FC = () => {
                 <ul className="space-y-6">
                   <li className="flex flex-col">
                     <span className="text-[10px] uppercase text-gray-600 tracking-widest mb-1">Electronic Mail</span>
-                    <span className="text-white font-medium text-lg">trade@dkexporting.com</span>
+                    <span className="text-white font-medium text-lg">dkexporting@gmail.com</span>
                   </li>
                   <li className="flex flex-col">
                     <span className="text-[10px] uppercase text-gray-600 tracking-widest mb-1">Logistics Hotline</span>

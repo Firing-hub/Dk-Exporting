@@ -2,13 +2,13 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import Home from './pages/Home';
-import About from './pages/About';
-import Products from './pages/Products';
-import ExportProcess from './pages/ExportProcess';
-import Compliance from './pages/Compliance';
-import Contact from './pages/Contact';
-import Chatbot from './Chatbot';
+import Home from './pages/Home.tsx';
+import About from './pages/About.tsx';
+import Products from './pages/Products.tsx';
+import ExportProcess from './pages/ExportProcess.tsx';
+import Compliance from './pages/Compliance.tsx';
+import Contact from './pages/Contact.tsx';
+import Chatbot from './Chatbot.tsx';
 
 const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <motion.div
@@ -101,8 +101,8 @@ const Footer: React.FC = () => (
         <div>
           <h4 className="text-[10px] font-bold text-white mb-6 uppercase tracking-widest">Global Relations</h4>
           <address className="not-italic text-xs text-gray-500 space-y-3 font-light">
-            <p>Strategic Trade Hub, Indore<br />Madhya Pradesh, India</p>
-            <p className="text-white hover:text-gold transition-colors cursor-pointer">trade@dkexporting.com</p>
+            <p>12, Road Bilawali, Ganesh Nagar,<br />Near Khandwa Naka, Indore,<br />Madhya Pradesh, India - 452001</p>
+            <p className="text-white hover:text-gold transition-colors cursor-pointer">dkexporting@gmail.com</p>
           </address>
         </div>
       </div>
@@ -117,26 +117,26 @@ const Footer: React.FC = () => (
   </footer>
 );
 
-const App: React.FC = () => (
-  <Router>
-    <div className="min-h-screen flex flex-col selection:bg-gold selection:text-black">
-      <Header />
-      <main className="flex-grow">
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
-            <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
-            <Route path="/products" element={<PageWrapper><Products /></PageWrapper>} />
-            <Route path="/process" element={<PageWrapper><ExportProcess /></PageWrapper>} />
-            <Route path="/compliance" element={<PageWrapper><Compliance /></PageWrapper>} />
-            <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
-          </Routes>
-        </AnimatePresence>
-      </main>
-      <Footer />
-      <Chatbot />
-    </div>
-  </Router>
-);
-
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <div className="min-h-screen flex flex-col selection:bg-gold selection:text-black">
+        <Header />
+        <main className="flex-grow">
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
+              <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+              <Route path="/products" element={<PageWrapper><Products /></PageWrapper>} />
+              <Route path="/process" element={<PageWrapper><ExportProcess /></PageWrapper>} />
+              <Route path="/compliance" element={<PageWrapper><Compliance /></PageWrapper>} />
+              <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+            </Routes>
+          </AnimatePresence>
+        </main>
+        <Footer />
+        <Chatbot />
+      </div>
+    </Router>
+  );
+}

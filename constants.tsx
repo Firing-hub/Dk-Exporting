@@ -60,28 +60,28 @@ export const LEADERSHIP: Leadership[] = [
     role: 'CEO & Founder',
     bio: 'A visionary leader in global commodity trading, Raj Ranawat has institutionalized quality benchmarks across India\'s agricultural export landscape. His strategic oversight ensures DK Exporting remains a preferred partner for multi-million dollar portfolios in North America and Europe.',
     image: 'https://api.a0.dev/assets/image?text=professional%20headshot%20of%20a%20man%20in%20a%20light%20blue%20suit%20and%20black%20shirt%20clean%20shaven%20short%20hair%20professional%20look%20corporate%20portrait&aspect=3:4',
-    socials: { linkedin: '#', email: 'raj@dkexporting.com' }
+    socials: { linkedin: '#', email: 'dkexporting@gmail.com' }
   },
   {
     name: 'Adyant Prakash',
     role: 'Business Strategist',
     bio: 'An architect of cross-border trade optimization and institutional risk management. Adyant leverages sophisticated market intelligence to navigate complex global supply chain dynamics, ensuring DK Exporting maintains a structural competitive advantage for its high-volume B2B partners.',
     image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&q=80&w=400',
-    socials: { linkedin: '#', email: 'adyant@dkexporting.com' }
+    socials: { linkedin: '#', email: 'dkexporting@gmail.com' }
   },
   {
     name: 'Amritanshu Monarch',
     role: 'Product Manager',
     bio: 'The custodian of quality and supply chain excellence. Amritanshu oversees the end-to-end integration of our sourcing nodes, ensuring that every shipment exceeds international phytosanitary and grading standards.',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400',
-    socials: { linkedin: '#', email: 'amritanshu@dkexporting.com' }
+    socials: { linkedin: '#', email: 'dkexporting@gmail.com' }
   },
   {
     name: 'Rakesh Patidar',
     role: 'Sales Head',
     bio: 'A specialist in multi-million dollar B2B relationship management and global logistics. Rakesh leads our international sales division, focusing on large-scale procurement contracts for distributors and wholesalers worldwide.',
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400',
-    socials: { linkedin: '#', email: 'rakesh@dkexporting.com' }
+    socials: { linkedin: '#', email: 'dkexporting@gmail.com' }
   }
 ];
 
