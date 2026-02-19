@@ -40,7 +40,7 @@ const Products: React.FC = () => {
                   transition={{ duration: 0.8 }}
                   className="relative aspect-square md:aspect-video overflow-hidden border border-white/10 shadow-[0_30px_60px_-12px_rgba(212,175,55,0.1)] rounded-none"
                 >
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 brightness-90" />
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-all duration-1000 brightness-95 hover:brightness-110" />
                   <div className="absolute top-8 left-8 bg-black/80 backdrop-blur-md text-gold border border-gold/20 px-6 py-2 text-[10px] font-black uppercase tracking-[0.4em] rounded-none">
                     {product.category}
                   </div>

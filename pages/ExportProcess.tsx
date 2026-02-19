@@ -88,7 +88,7 @@ const ExportProcess: React.FC = () => {
               <div className="absolute -inset-2 border border-gold/10 group-hover:rotate-1 transition-transform"></div>
               <img 
                 src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&q=80&w=800" 
-                className="w-full grayscale brightness-75 group-hover:grayscale-0 transition-all duration-1000" 
+                className="w-full brightness-90 group-hover:brightness-110 transition-all duration-1000" 
                 alt="Logistics Documentation" 
               />
             </div>

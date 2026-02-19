@@ -62,7 +62,7 @@ const Compliance: React.FC = () => {
                 <img 
                   src={cert.logo} 
                   alt={cert.name} 
-                  className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700"
+                  className="max-h-full max-w-full object-contain transition-all duration-700"
                 />
               </div>
               <h3 className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-4">

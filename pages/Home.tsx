@@ -173,7 +173,7 @@ const Home: React.FC = () => {
               >
                 <img 
                   src={p.image} 
-                  className="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" 
+                  className="w-full h-full object-cover brightness-90 group-hover:brightness-110 transition-all duration-700" 
                   alt={p.name}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
